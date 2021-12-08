@@ -20,7 +20,7 @@ const sym = (args) => {
     // the value of the arguments passed to the function.
     const arrOfArrs = [...arguments]
     let output = arrOfArrs[0];
-    for (let i = i; i < arrOfArrs.length; i++) {
+    for (let i = 1; i < arrOfArrs.length; i++) {
         output = symOfTwo(output, arrOfArrs[i]); 
     }
     return output.sort((a,b) => a - b);
@@ -29,4 +29,4 @@ const sym = (args) => {
 
 
 console.log(sym([1,2,3], [5,2,1,4]));
-console.log(symOfTwo([1,2,3], [5,2,1,4]));
+// console.log(symOfTwo([1,2,3], [5,2,1,4]));
